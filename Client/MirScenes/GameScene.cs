@@ -5695,7 +5695,7 @@ namespace Client.MirScenes
                 }
                 else
                 {
-                    text = string.Format(minValue + addValue > 0 ? "Luck + {0}" : "Curse + {0}", minValue + addValue);
+                    text = string.Format(minValue + addValue > 0 ? "Luck {0}%" : "Curse {0}%", (minValue + addValue) * 10);
                 }
 
                 MirLabel LUCKLabel = new MirLabel
@@ -11141,7 +11141,7 @@ namespace Client.MirScenes
             AddButton.Click += (o1, e) =>
             {
                 int openLevel = (GameScene.User.Inventory.Length - 46) / 4;
-                int openGold = (1000000 + openLevel * 1000000);
+                int openGold = (1000000 + openLevel * 100000);
                 MirMessageBox messageBox = new MirMessageBox(string.Format("Are you sure you would like to unlock 4 extra slots for {0:###,###} gold ?\n" +
                                                     "This will take your inventory space up to {1} slots in total.", openGold, GameScene.User.Inventory.Length+4), MirMessageBoxButtons.OKCancel);
 
@@ -11891,7 +11891,7 @@ namespace Client.MirScenes
                 AttkSpdLabel.Text = string.Format("{0}", MapObject.User.ASpeed);
                 AccLabel.Text = string.Format("+{0}", MapObject.User.Accuracy);
                 AgilLabel.Text = string.Format("+{0}", MapObject.User.Agility);
-                LuckLabel.Text = string.Format("+{0}", MapObject.User.Luck);
+                LuckLabel.Text = string.Format("{0}%", MapObject.User.Luck*10);
             };
 
             StatePage = new MirImageControl

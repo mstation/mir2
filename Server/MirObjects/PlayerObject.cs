@@ -12445,16 +12445,29 @@ namespace Server.MirObjects
         {
             UserItem item = Info.Equipment[(int)EquipmentSlot.Weapon];
 
-            if (item == null || item.Luck >= 7) return false;
+            //if (item == null || item.Luck >= 7) return false;
+            if (item == null)
+            {
+                ReceiveChat("You need to have an equipped weapon in order to proceed.", ChatType.Hint);
+                return false;
+            }
 
-            if (item.Luck > (Settings.MaxLuck * -1) && Envir.Random.Next(20) == 0)
+            if (item.Luck >= 7)
+            {
+                ReceiveChat("You have reached maximum luck.", ChatType.Hint);
+                return false;
+            }
+
+            /*if (item.Luck > (Settings.MaxLuck * -1) && Envir.Random.Next(20) == 0)
             {
                 Luck--;
                 item.Luck--;
                 Enqueue(new S.RefreshItem { Item = item });
                 ReceiveChat("Curse dwells within your weapon.", ChatType.System);
-            }
-            else if (item.Luck <= 0 || Envir.Random.Next(10 * item.Luck) == 0)
+            }*/
+
+            //else if (item.Luck <= 0 || Envir.Random.Next(10 * item.Luck) == 0)
+            if (item.Luck <= 0 || Envir.Random.Next(10 * item.Luck) == 0)
             {
                 Luck++;
                 item.Luck++;
@@ -12463,7 +12476,7 @@ namespace Server.MirObjects
             }
             else
             {
-                ReceiveChat("No effect.", ChatType.Hint);
+                ReceiveChat("Nothing happened.", ChatType.Hint);
             }
 
             return true;
