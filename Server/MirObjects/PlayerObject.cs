@@ -3411,6 +3411,13 @@ namespace Server.MirObjects
                         ReceiveChat("Please type the GM Password", ChatType.Hint);
                         return;
 
+                    case "T":
+                        UserItem weapon = Info.Equipment[(byte)EquipmentSlot.Weapon];
+                        weapon.Luck--;
+                        ReceiveChat("Your weapon has been cursed.", ChatType.System);
+                        Enqueue(new S.RefreshItem { Item = weapon });
+                        return;
+
                     case "KILL":
                         if (!IsGM) return;
 
