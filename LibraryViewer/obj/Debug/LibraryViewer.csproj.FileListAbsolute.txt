@@ -1,10 +1,10 @@
 C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\bin\Debug\CMirLibraryViewer.exe.config
 C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\bin\Debug\CMirLibraryViewer.exe
 C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\bin\Debug\CMirLibraryViewer.pdb
-C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\LibraryViewer.csprojResolveAssemblyReference.cache
 C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\LibraryViewer.LMain.resources
 C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\LibraryViewer.LoadSettings.resources
 C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\CMirLibraryViewer.Properties.Resources.resources
 C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\LibraryViewer.csproj.GenerateResource.Cache
 C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\CMirLibraryViewer.exe
 C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\CMirLibraryViewer.pdb
+C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\LibraryViewer.csprojResolveAssemblyReference.cache

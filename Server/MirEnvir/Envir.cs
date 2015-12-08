@@ -854,7 +854,7 @@ namespace Server.MirEnvir
                         File.Delete(oldfilename + "o");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
         }
@@ -919,7 +919,7 @@ namespace Server.MirEnvir
                         File.Delete(oldfilename + "o");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
 
@@ -968,7 +968,7 @@ namespace Server.MirEnvir
                         File.Delete(oldfilename + "o");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
 

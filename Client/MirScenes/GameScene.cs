@@ -2109,7 +2109,6 @@ namespace Client.MirScenes
 
             MirItemCell fromCell = CharacterDialog.Grid[index];
 
-
             switch (p.Grid)
             {
                 case MirGridType.Inventory:
@@ -2130,9 +2129,11 @@ namespace Client.MirScenes
             if (!p.Success) return;
             toCell.Item = fromCell.Item;
             fromCell.Item = null;
+
             CharacterDuraPanel.GetCharacterDura();
             User.RefreshStats();
         }
+
         private void RemoveSlotItem(S.RemoveSlotItem p)
         {
             MirItemCell fromCell;
@@ -2175,6 +2176,7 @@ namespace Client.MirScenes
             CharacterDuraPanel.GetCharacterDura();
             User.RefreshStats();
         }
+
         private void TakeBackItem(S.TakeBackItem p)
         {
             MirItemCell fromCell = StorageDialog.Grid[p.From];
@@ -20113,9 +20115,9 @@ namespace Client.MirScenes
                     PriceLabel.ForeColour = Color.Red;
                 else if (listing.Price > 1000000) //1Million
                     PriceLabel.ForeColour = Color.Orange;
-                else if (listing.Price > 100000) //1Million
+                else if (listing.Price > 100000) //100k
                     PriceLabel.ForeColour = Color.Green;
-                else if (listing.Price > 10000) //1Million
+                else if (listing.Price > 10000) //10k
                     PriceLabel.ForeColour = Color.DeepSkyBlue;
                 else
                     PriceLabel.ForeColour = Color.White;

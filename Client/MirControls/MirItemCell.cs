@@ -579,7 +579,7 @@ namespace Client.MirControls
             int count = 0;
 
             for (int i = 0; i < GameScene.Scene.InventoryDialog.Grid.Length; i++)
-                if (GameScene.Scene.InventoryDialog.Grid[i].Item != null) count++;
+                if (GameScene.Scene.InventoryDialog.Grid[i].Item == null) count++;
 
             if (Item == null || count < 1 || (MapObject.User.RidingMount && Item.Info.Type != ItemType.Torch)) return;
 
