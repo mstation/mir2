@@ -578,7 +578,7 @@ namespace Client.MirControls
         {
             int count = 0;
 
-            for (int i = 0; i < GameScene.Scene.InventoryDialog.Grid.Length; i++)
+            for (int i = 0; i < GameScene.User.Inventory.Length; i++)
                 if (GameScene.Scene.InventoryDialog.Grid[i].Item == null) count++;
 
             if (Item == null || count < 1 || (MapObject.User.RidingMount && Item.Info.Type != ItemType.Torch)) return;
@@ -587,7 +587,7 @@ namespace Client.MirControls
             {
                 UserItem item = null;
 
-                for (int i = 0; i < GameScene.Scene.InventoryDialog.Grid.Length; i++)
+                for (int i = 0; i < GameScene.User.Inventory.Length; i++)
                 {
                     MirItemCell cell = GameScene.Scene.InventoryDialog.Grid[i];
 
@@ -608,7 +608,7 @@ namespace Client.MirControls
                 }
             }
 
-            for (int i = 0; i < GameScene.Scene.InventoryDialog.Grid.Length; i++)
+            for (int i = 0; i < GameScene.User.Inventory.Length; i++)
             {
                 MirItemCell itemCell = GameScene.Scene.InventoryDialog.Grid[i];
 

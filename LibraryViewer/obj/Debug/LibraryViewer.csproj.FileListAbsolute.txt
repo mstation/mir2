@@ -7,4 +7,3 @@ C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\CMirLibraryViewer.
 C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\LibraryViewer.csproj.GenerateResource.Cache
 C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\CMirLibraryViewer.exe
 C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\CMirLibraryViewer.pdb
-C:\Users\Simone\Documents\GitHub\mir2\LibraryViewer\obj\Debug\LibraryViewer.csprojResolveAssemblyReference.cache

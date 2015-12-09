@@ -13679,6 +13679,11 @@ namespace Server.MirObjects
                 current = current.Next;
             }
 
+            if (UserMatch)
+                Search.Sort((x1, x2) => x2.Sold.CompareTo(x1.Sold));
+            /*if (UserMatch)            
+                Search.Sort((x1, x2) => x2.Sold.CompareTo(x1.Sold));*/
+
             List<ClientAuction> listings = new List<ClientAuction>();
 
             for (int i = 0; i < 10; i++)

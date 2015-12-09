@@ -26,4 +26,3 @@ C:\Users\Simone\Downloads\CMir\MirServer\Server.exe
 C:\Users\Simone\Downloads\CMir\MirServer\Server.pdb
 C:\Users\Simone\Documents\GitHub\mir2\Server\obj\Debug\Server.exe
 C:\Users\Simone\Documents\GitHub\mir2\Server\obj\Debug\Server.pdb
-C:\Users\Simone\Documents\GitHub\mir2\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
